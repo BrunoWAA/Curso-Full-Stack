@@ -6,8 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste hehe</title>
 </head>
-<p>Testando</p>
+<p>Previsão do tempo</p>
 <body>
-    
+    <button id="tempo">Tempestade</button>
+    <h1 id="tempoEscrito">O tempo é: </h1>
+    <h1 id="TempoAPI"></h1>
+
 </body>
+
+<script>
+    document.getElementById("tempo").addEventListener("click", function ()
+    {
+        var tempoDefault = document.getElementById("tempoEscrito").value
+        document.getElementById("tempoEscrito").innerHTML = "Ainda não sei buscar o tempo"
+        
+    })
+</script>
 </html>
